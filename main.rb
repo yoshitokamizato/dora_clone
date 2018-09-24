@@ -1,6 +1,5 @@
-require(../kamizato.rb)
+require './kamizato'
 
-hp = 5
-damage = 2
+kamizato = Kamizato.new
 
-puts hp - damage
+puts "#私の名前は{kamizato.name}です。"
