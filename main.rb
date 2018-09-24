@@ -1,4 +1,5 @@
-hp = 5
-damage = 2
+require './kamizato'
 
-puts hp - damage
+kamizato = Kamizato.new
+
+puts "#私の名前は{kamizato.name}です。"
