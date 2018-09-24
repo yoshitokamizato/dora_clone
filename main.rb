@@ -1,3 +1,5 @@
+require(../kamizato.rb)
+
 hp = 5
 damage = 2
 
