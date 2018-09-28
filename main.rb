@@ -1,4 +1,3 @@
-hp = 5
-damage = 2
-
-puts hp - damage
+require './tkase'
+tkase = Tkase.new
+puts "私は、#{tkase.name}です"
