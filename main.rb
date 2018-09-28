@@ -1,3 +1,4 @@
+
 require './kamizato'
 require './ynakamura'
 
