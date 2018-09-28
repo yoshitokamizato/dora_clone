@@ -1,8 +1,8 @@
 require './kamizato'
 require './ynakamura'
 
-kamizato = Kamizato.new
+kamizato = Kamizato.new("kamizato", 30, 20)
 ynakamura = Ynakamura.new
 
-puts "#私の名前は{kamizato.name}です。"
+puts kamizato.disp_params
 puts "私の名前は#{ynakamura.name}です。"
