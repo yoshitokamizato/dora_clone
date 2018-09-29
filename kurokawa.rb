@@ -1,6 +1,6 @@
 class Kurokawa
   attr_accessor :name
-  def initialize(name,hp,mp)
+  def initialize
     self.name = "kurokawa"
   end
 end
