@@ -1,15 +1,17 @@
 class Character
   attr_accessor :name, :hp, :mp, :atk, :deff
-  def initialize(hp:, mp: ,atk:, deff: )
+  def initialize(name:, hp:, mp: ,atk:, deff: )
+    self.name = name
     self.hp = hp
     self.mp = mp
     self.atk = atk
     self.deff = deff
   end
 
-  def showStatus
-    puts <<~PARAMS
-    なまえ : #{self.name}
+  def disp_params
+    <<~PARAMS
+    #{self.name}のパラメータ
+
     HP : #{self.hp}
     MP : #{self.mp}
     こうげきりょく : #{self.atk}
@@ -25,9 +27,10 @@ class Character
     end
 
     enemy.hp -= damage
-    puts <<~ATACK
-    #{self.name}のこうげき"
-    #{enemy.name}に#{damage}のダメージをあたえた"
+    
+    <<~ATACK
+    #{self.name}のこうげき
+    #{enemy.name}に#{damage}のダメージをあたえた
     ATACK
   end
 

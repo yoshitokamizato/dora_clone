@@ -1,25 +1,26 @@
 require './ynakamura'
 require './slime_monster'
 
-ynakamura = Ynakamura.new(hp:25, mp:32 ,atk:3, deff:25 )
-slime = Slime.new(hp:10, mp:0, atk:1, deff:2)
+# 攻撃を行うキャラクタの生成
+ynakamura = Ynakamura.new(name:"なかむら", hp:25, mp:32 ,atk:5, deff:3 )
+slime = Slime.new(name:"スライム", hp:10, mp:0, atk:4, deff:2)
 
-puts "#{ynakamura.name}は旅に出た"
-ynakamura.showStatus
-puts ""
+#戦う前の文の表示
+puts <<~STORY
+  #{ynakamura.name}は旅に出た
 
-puts "#{slime.name}があらわれた"
-slime.showStatus
-puts ""
+  #{ynakamura.disp_params}
 
-#スライムとたたかう
-puts ""
-ynakamura.atack(slime)
-puts ""
-slime.atack(ynakamura)
+  #{slime.name}があらわれた
+  #{slime.disp_params}
 
-#戦闘結果の表示
-puts ""
-ynakamura.showStatus
-puts ""
-slime.showStatus
+STORY
+
+#戦いの文の表示
+puts <<~BATTLE
+  #{ynakamura.atack(slime)}
+  #{slime.atack(ynakamura)}
+
+  #{ynakamura.disp_params}
+  #{slime.disp_params}
+BATTLE
