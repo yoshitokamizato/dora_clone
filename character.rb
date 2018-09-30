@@ -27,7 +27,7 @@ class Character
     end
 
     enemy.hp -= damage
-    
+
     <<~ATACK
     #{self.name}のこうげき
     #{enemy.name}に#{damage}のダメージをあたえた
