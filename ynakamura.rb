@@ -1,4 +1,4 @@
-require "./common.rb"
+require "./character.rb"
 
 class Ynakamura < Character
   def initialize(name:, hp:, mp: ,atk:, deff: )
