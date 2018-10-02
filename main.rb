@@ -9,5 +9,5 @@ kuro = Kuro.new
 
 puts kamizato.disp_params
 puts ynakamura.disp_params
-puts "私は、#{{tkase.name}です}"
+puts "私は、#{tkase.name}です}"
 puts "私は#{kuro.name}です"
