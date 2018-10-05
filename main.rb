@@ -11,6 +11,6 @@ ajk = Ajk.new(name: "ajk", hp:28 , mp:15, atk:3, deff:4)
 
 puts kamizato.disp_params
 puts ynakamura.disp_params
-puts "私は、#{{tkase.name}です}"
+puts "私は、#{tkase.name}です}"
 puts "私は#{kuro.name}です"
 puts ajk.disp_params
