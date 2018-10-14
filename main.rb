@@ -14,3 +14,4 @@ puts ynakamura.disp_params
 puts "私は、#{tkase.name}です}"
 puts "私は#{kuro.name}です"
 puts ajk.disp_params
+puts "私は#{satoshi.name}です"
