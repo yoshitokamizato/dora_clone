@@ -1,6 +1,6 @@
 class Character
   attr_accessor :name, :hp, :mp, :atk, :deff
-  def initialize(name:, hp:, mp: ,atk:, deff: )
+  def initialize(name:, hp:, mp: , atk:, deff: )
     self.name = name
     self.hp = hp
     self.mp = mp
