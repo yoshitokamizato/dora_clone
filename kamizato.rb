@@ -1,9 +1,10 @@
 class Kamizato
-  attr_accessor :name, :hp, :mp
-  def initialize(name, hp, mp)
+  attr_accessor :name, :hp, :mp, :attack
+  def initialize(name, hp, mp, attack)
     self.name = name
     self.hp = hp
     self.mp = mp
+    self.attack = attack
   end
 
   def disp_params
@@ -15,6 +16,7 @@ class Kamizato
 
     HP:#{hp}
     MP:#{mp}
+    Attack：#{attack}
 
     PARAMS
   end
